@@ -1,5 +1,6 @@
 import { TextField } from '../TextField';
 import { DropdownList } from '../DropdownList';
+import { Button } from '../Button';
 
 import styles from './Form.module.css';
 
@@ -25,6 +26,9 @@ export const Form = () => {
                     label="Times"
                     items={ teams }
                 />
+                <Button>
+                    Criar Card
+                </Button>
             </form>
         </section>
     )
