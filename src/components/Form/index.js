@@ -15,14 +15,21 @@ const teams = [
 ]
     
 export const Form = () => {
+
+    const whenSaving = (event) => {
+        event.preventDefault();
+        console.log('formulario foi submetido =>');
+    }
+
     return (
         <section className={ styles.form }>
-            <form>
+            <form onSubmit={ whenSaving }>
                 <h2>Preencha os dados para criar o card do colaborador</h2>
-                <TextField label="Nome" placeholder="Digite seu nome" />
-                <TextField label="Cargo" placeholder="Digite seu cargo" />
-                <TextField label="Image" placeholder="Informe o endereço da imagem" />
+                <TextField require={ true } label="Nome" placeholder="Digite seu nome" />
+                <TextField require={ true } label="Cargo" placeholder="Digite seu cargo" />
+                <TextField require={ true } label="Image" placeholder="Informe o endereço da imagem" />
                 <DropdownList 
+                    require={ true }
                     label="Times"
                     items={ teams }
                 />

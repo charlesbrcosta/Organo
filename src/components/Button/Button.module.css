@@ -1,5 +1,5 @@
 .button {
-    background-color: #6278F7;
+    background-color: #7f92ff;
     border-radius: 10PX;
     font-weight: 700;
     font-size: 18px;
@@ -8,6 +8,8 @@
     cursor: pointer;
     color: #FFF;
     margin: 32px 0;
+    box-shadow: 5px 5px 15px #babecc,
+               -5px -5px 15px #ffffff;
 }
 
 .button:hover {

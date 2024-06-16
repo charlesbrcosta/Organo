@@ -7,7 +7,10 @@ export const TextField = (props) => {
     return (
         <div className={ styles.text_field }>
             <label>{ props.label }</label>
-            <input placeholder={ placeholderChange }/>
+            <input 
+                required={ props.require }
+                placeholder={ placeholderChange }
+            />
         </div>
     );
 }

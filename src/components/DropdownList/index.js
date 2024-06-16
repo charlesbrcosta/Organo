@@ -4,7 +4,7 @@ export const DropdownList = (props) => {
     return(
         <div className={ styles.dropdown_list }>
             <label>{ props.label }</label>
-            <select>
+            <select required={ props.require } >
                 { props.items.map(item => {
                     return (
                         <option key={ item }>
