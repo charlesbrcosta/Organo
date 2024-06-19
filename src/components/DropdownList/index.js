@@ -19,11 +19,7 @@ export const DropdownList = (props) => {
                 onChange={ whenTyping }
             >
                 { props.items.map(item => {
-                    return (
-                        <option key={ item }>
-                            { item }
-                        </option>
-                    );
+                    return <option key={ item }> { item }</option>
                 })}
             </select>
         </div>

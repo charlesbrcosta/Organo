@@ -6,26 +6,31 @@ import { Button } from '../Button';
 
 import styles from './Form.module.css';
 
+const teams = [
+    '',
+    'Programação',
+    'Frond-End',
+    'Data Science',
+    'Devops',
+    'UX e Design',
+    'Mobile',
+    'Inovação e Gestão'
+]
     
-export const Form = () => {
+export const Form = (props) => {
     const [name, setName] = useState('');
     const [jobTitle, setJobTitle] = useState('');
     const [image, setImage] = useState('');
     const [team, setTeam] = useState('');
 
-    const teams = [
-        '',
-        'Programação',
-        'Data Science',
-        'Devops',
-        'UX e Design',
-        'Mobile',
-        'Inovação e Gestão'
-    ]
-
     const whenSaving = (event) => {
         event.preventDefault();
-        console.log('formulario foi submetido =>', name, jobTitle, image, team);
+        props.registerCollaborator({
+            name,
+            jobTitle,
+            image,
+            team
+        });        
     }
 
     return (

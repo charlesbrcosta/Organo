@@ -8,8 +8,9 @@
     cursor: pointer;
     color: #FFF;
     margin: 32px 0;
-    box-shadow: 5px 5px 15px #babecc,
-               -5px -5px 15px #ffffff;
+    /* box-shadow: 5px 5px 15px #babecc,
+               -5px -5px 15px #ffffff; */
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.06);
 }
 
 .button:hover {
