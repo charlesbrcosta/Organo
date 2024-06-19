@@ -5,17 +5,6 @@ import { DropdownList } from '../DropdownList';
 import { Button } from '../Button';
 
 import styles from './Form.module.css';
-
-const teams = [
-    '',
-    'Programação',
-    'Frond-End',
-    'Data Science',
-    'Devops',
-    'UX e Design',
-    'Mobile',
-    'Inovação e Gestão'
-]
     
 export const Form = (props) => {
     const [name, setName] = useState('');
@@ -63,7 +52,7 @@ export const Form = (props) => {
                 <DropdownList 
                     require={ true }
                     label="Times"
-                    items={ teams }
+                    items={ props.teams }
                     valueInput={ team }
                     toChange={ value => setTeam(value) }
                 />

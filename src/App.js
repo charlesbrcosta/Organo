@@ -52,7 +52,10 @@ export function App() {
   return (
     <div className="App">
       <Banner />
-      <Form registerCollaborator={ collaborator => newCollaboratorAdded(collaborator) }/>
+      <Form
+        teams={ teams.map(team => team.name) }
+        registerCollaborator={ collaborator => newCollaboratorAdded(collaborator) }
+      />
 
       { teams.map(team => {
         return (
