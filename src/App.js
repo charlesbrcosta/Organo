@@ -52,21 +52,16 @@ export function App() {
   return (
     <div className="App">
       <Banner />
-      <Form
-        teams={ teams.map(team => team.name) }
-        registerCollaborator={ collaborator => newCollaboratorAdded(collaborator) }
-      />
+      <Form teams={ teams.map(team => team.name) } registerCollaborator={ collaborator => newCollaboratorAdded(collaborator) }/>
 
-      { teams.map(team => {
-        return (
-          <Team 
+      { teams.map(team => <Team 
             key={ team.name } 
             name={ team.name }
             primaryColor={ team.primaryColor }
             secondColor={ team.secondColor }
+            collaborators={ collaborators.filter(collaborator => collaborator.team === team.name) }
           />
-        );
-      })}
+      )}
     </div>
   );
 }
