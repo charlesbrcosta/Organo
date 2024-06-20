@@ -6,7 +6,7 @@ export const  Team = (props) => {
 
     return(
 
-        props.collaborators.length > 0 ? <section className={ styles.team } style={{ primaryColor: props.secondColor }}>
+        props.collaborators.length > 0 ? <section className={ styles.team } style={{ backgroundColor: props.secondColor }}>
 
             <h3 style={{ borderColor: props.primaryColor }}>{ props.name }</h3>
 
