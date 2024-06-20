@@ -1,4 +1,5 @@
 import { useState } from 'react'; 
+import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
 
 import { Banner } from './components/Banner/';
 import { Form } from './components/Form';
@@ -43,6 +44,24 @@ const teams = [
   },
 ];
 
+const icons = [
+  {
+    name: 'facebook',
+    component: <FaFacebook />,
+    link: 'https://www.facebook.com' 
+  },
+  { 
+    name: 'twitter',
+    component: <FaTwitter />,
+    link: 'https://www.twitter.com' 
+  },
+  { 
+    name: 'instagram',
+    component: <FaInstagram />,
+    link: 'https://www.instagram.com'
+  }
+]
+
 export function App() {
   const [collaborators, setCollaborator] = useState([]);
 
@@ -63,7 +82,14 @@ export function App() {
             collaborators={ collaborators.filter(collaborator => collaborator.team === team.name) }
           />
       )}
-      <Footer />
+      
+      <Footer 
+        backgroundImage='./assets/fundo.png'
+        socialIcons={ icons }
+        logo='./assets/logo.png'
+        alt='logo do organo'
+        creditText='Desenvolvido por Alura'
+      />
     </div>
   );
 }

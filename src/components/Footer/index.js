@@ -1,35 +1,26 @@
-import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
-
 import styles from './Footer.module.css';
 
-export const Footer = () => {
+export const Footer = ({ backgroundImage, socialIcons, logo, alt, creditText }) => {
+    
     return(
-        <footer className={ styles.footer }>
+        <footer className={ styles.footer } style={{ backgroundImage: `url(${backgroundImage})` }}>
             <section>
                 <ul>
-                    <li>
-                        <a href='facebook.com' target='_blank'>
-                            <FaFacebook />
-                        </a>
-                    </li>
-                    <li>
-                        <a href='twitter.com' target='_blank'>
-                            <FaTwitter />
-                        </a>
-                    </li>
-                    <li>
-                        <a href='instagram.com' target='_blank'>
-                            <FaInstagram />
-                        </a>
-                    </li>
+                    { socialIcons.map(icon => (
+                        <li key={ icon.name }>
+                            <a href={ icon.link } target='_blank' rel='noopener noreferrer'>
+                                { icon.component }
+                            </a>
+                        </li>
+                    ))} 
                 </ul>
             </section>
             <section>
-                <img src='./assets/logo.png' alt='' />
+                <img src={ logo } alt={ alt } />
             </section>
             <section className={styles.credit_text}>
                 <p>
-                    Desenvolvido por Alura.
+                    { creditText }
                 </p>
             </section>
         </footer>
