@@ -1,0 +1,31 @@
+.footer {
+    background-image: url('../../../public/assets/fundo.png');
+    background-color: #6278f7;
+    color: #ffffff;
+    padding: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer ul li {
+    display: inline-block;
+    margin-right: 32px;
+}
+
+.footer ul li:last-child {
+    margin-right: 0;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 26px;
+}
+
+.footer .credit_text {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 24px;
+}

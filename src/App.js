@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { Banner } from './components/Banner/';
 import { Form } from './components/Form';
 import { Team } from './components/Team';
+import { Footer } from './components/Footer';
 
 const teams = [
   {
@@ -62,6 +63,7 @@ export function App() {
             collaborators={ collaborators.filter(collaborator => collaborator.team === team.name) }
           />
       )}
+      <Footer />
     </div>
   );
 }
