@@ -1,9 +1,9 @@
 import styles from './Collaborator.module.css';
 
-export const Collaborator = ({ name, image, jobTitle }) => {
+export const Collaborator = ({ name, image, jobTitle, primaryColor }) => {
     return(
         <div className={ styles.collaborator }>
-            <div className={ styles.header }>
+            <div className={ styles.header } style={{ backgroundColor: primaryColor}}>
                 <img src={ image } alt={ name }/>
             </div>
             <div className={ styles.footer }>
