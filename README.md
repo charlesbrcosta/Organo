@@ -1,70 +1,92 @@
-# Getting Started with Create React App
+# Sistema Organo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+O Sistema Organo foi desenvolvido como parte da primeira aula prática de React. O objetivo principal deste projeto é introduzir e praticar conceitos fundamentais de React, incluindo:
 
-## Available Scripts
+- Componentes estáticos e dinâmicos
+- Props
+- Desestruturação de componentes
+- Refatoração
+- Métodos de array como map e filter
+- Criação de objetos para representar times e cores de times
+- Criação de objeto para adicionar icons de redes sociais
 
-In the project directory, you can run:
+O projeto foi iniciado utilizando o create-react-app.
 
-### `npm start`
+## :dizzy: Tecnologias utilizadas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<div>
+  <img width="40" src="./public/assets/icons/React-Dark.svg">
+  <img width="40" src="./public/assets/icons/JavaScript.svg">
+  <img width="40" src="./public/assets/icons/CSS.svg">
+</div>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## :hammer: Funcionalidades
 
-### `npm test`
+O Sistema Organo permite o cadastro de pessoas, incluindo nome, cargo e time. Os times são selecionados a partir de uma lista de opções (select), que inclui áreas de atuação na programação, como Front-end, UX, Gestão, entre outras.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Ao cadastrar um novo cartão (card) e escolher um time, o sistema utiliza o método filter para organizar e exibir os membros conforme suas áreas de atuação.
 
-### `npm run build`
+### Interface da página inicial: 
+<img src="./public/assets/interfacePrint/Interface.png"  alt="Pagina inicial." width="900">
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<br />
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Interface do cadastro de pessoas:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<img src="./public/assets/interfacePrint/cadastroDeCards.png"  alt="Pagina inicial." width="900">
 
-### `npm run eject`
+<br />
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## :globe_with_meridians: Como Acessar o Deploy Online
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Vercel
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+O projeto está disponível na Vercel. Você pode acessá-lo através do seguinte link: 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+[Sistema Organo na Vercel.](https://organo.vercel.app/)
 
-## Learn More
+## :warning: Como Executar o Projeto Localmente
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Pré-requisitos
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Node.js instalado
+- npm (gerenciador de pacotes do Node.js)
+- Navegador web moderno que suporte HTML5, CSS3 e JavaScript.
 
-### Code Splitting
+## :dvd: Passo a Passo
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. Clone o repositório:
 
-### Analyzing the Bundle Size
+   ```bash
+   git clone https://github.com/charlesbrcosta/Organo.git
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+2. Acesse o diretório do projeto:
+    ```bash
+    cd Organo
 
-### Making a Progressive Web App
+3. Instale as dependências:
+    ```bash
+    npm install ou npm i
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+4. Inicie o sistema organo:
+    ```bash
+    npm start
 
-### Advanced Configuration
+## :handshake: Contribuição
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Se você quiser contribuir com o projeto, siga os passos abaixo:
 
-### Deployment
+    Faça um fork deste repositório.
+    Crie uma nova branch (git checkout -b feature/nova-feature).
+    Faça commit das suas alterações (git commit -am 'Adiciona nova feature').
+    Faça push para a branch (git push origin feature/nova-feature).
+    Abra um Pull Request.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## :student: Autor
 
-### `npm run build` fails to minify
+[<img loading="lazy" src="https://avatars.githubusercontent.com/u/48035699?v=4" width=115><br><sub>Charles Bruno</sub>](https://github.com/charlesbrcosta)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## :page_facing_up: Licença
+
+Este projeto está licenciado sob a [Licença MIT](https://www.mit.edu/~amini/LICENSE.md).
