@@ -24,50 +24,41 @@ const icons = [
   }
 ]
 
-
-
 export function App() {
   const [teams, setTeams] = useState([
     {
       name: 'Programação',
-      primaryColor: '#D9F7E9',
-      secondColor: '#57C278',
+      color: '#57C278',
       
     },
     {
       name: 'Front-End',
-      primaryColor: '#E8F8FF',
-      secondColor: '#82CFFA',
+      color: '#82CFFA',
       
     },
     {
       name: 'Data Science',
-      primaryColor: '#F0F8E2',
-      secondColor: '#A6D157',
+      color: '#A6D157',
       
     },
     {
       name: 'Devops',
-      primaryColor: '#FDE7E8',
-      secondColor: '#E06B69',
+      color: '#E06B69',
       
     },
     {
       name: 'UX e Design',
-      primaryColor: '#FAE9F5',
-      secondColor: '#DB6EBF',
+      color: '#DB6EBF',
       
     },
     {
       name: 'Mobile',
-      primaryColor: '#FFF5D9',
-      secondColor: '#FFBA05',
+      color: '#FFBA05',
       
     },
     {
       name: 'Inovação e Gestão',
-      primaryColor: '#FFEEDF',
-      secondColor: '#FF8A29',
+      color: '#FF8A29',
       
     },
   ]);
@@ -233,7 +224,7 @@ export function App() {
   function changeColorTeam(color, name) {
     setTeams(teams.map(team => {
       if(team.name === name) {
-        team.secondColor = color;
+        team.color = color;
       }
       return team
     }));
