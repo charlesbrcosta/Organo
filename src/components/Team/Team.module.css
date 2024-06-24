@@ -1,7 +1,7 @@
 .team {
     text-align: center;
     padding: 32px;
-    /* background-color: #D9F7E9; */
+    background-blend-mode: multiply;
 }
 
 .team h3 {

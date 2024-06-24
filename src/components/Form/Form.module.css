@@ -13,3 +13,8 @@
     box-shadow: 10px 10px 20px #babecc,
                 -10px -10px 20px #FFFFFF;
 }
+
+.form form h2 {
+    font-weight: 400;
+    font-size: 32px;
+}

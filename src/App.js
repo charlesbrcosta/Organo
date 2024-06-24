@@ -62,8 +62,155 @@ const icons = [
   }
 ]
 
+const initial = [
+  {
+    name: 'JULIANA AMOASEI',
+    jobTitle: 'Desenvolvedora de software e instrutora',
+    image: 'https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg',
+    team: teams[0].name
+  },
+  {
+    name: 'DANIEL ARTINE',
+    jobTitle: 'Engenheiro de Software na Stone Age',
+    image: 'https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg',
+    team: teams[0].name
+  },
+  {
+    name: 'GUILHERME LIMA',
+    jobTitle: 'Desenvolvedor Python e JavaScript na Alura',
+    image: '	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg',
+    team: teams[0].name
+  },
+  {
+    name: 'PAULO SILVEIRA',
+    jobTitle: 'Hipster e CEO da Alura',
+    image: 'https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg',
+    team: teams[0].name
+  },
+  {
+    name: 'JULIANA AMOASEI',
+    jobTitle: 'Desenvolvedora de software e instrutora',
+    image: 'https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg',
+    team: teams[1].name
+  },
+  {
+    name: 'DANIEL ARTINE',
+    jobTitle: 'Engenheiro de Software na Stone Age',
+    image: 'https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg',
+    team: teams[1].name
+  },
+  {
+    name: 'GUILHERME LIMA',
+    jobTitle: 'Desenvolvedor Python e JavaScript na Alura',
+    image: '	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg',
+    team: teams[1].name
+  },
+  {
+    name: 'PAULO SILVEIRA',
+    jobTitle: 'Hipster e CEO da Alura',
+    image: 'https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg',
+    team: teams[1].name
+  },
+  {
+    name: 'JULIANA AMOASEI',
+    jobTitle: 'Desenvolvedora de software e instrutora',
+    image: 'https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg',
+    team: teams[2].name
+  },
+  {
+    name: 'DANIEL ARTINE',
+    jobTitle: 'Engenheiro de Software na Stone Age',
+    image: 'https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg',
+    team: teams[2].name
+  },
+  {
+    name: 'GUILHERME LIMA',
+    jobTitle: 'Desenvolvedor Python e JavaScript na Alura',
+    image: '	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg',
+    team: teams[2].name
+  },
+  {
+    name: 'PAULO SILVEIRA',
+    jobTitle: 'Hipster e CEO da Alura',
+    image: 'https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg',
+    team: teams[2].name
+  },
+  {
+    name: 'JULIANA AMOASEI',
+    jobTitle: 'Desenvolvedora de software e instrutora',
+    image: 'https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg',
+    team: teams[3].name
+  },
+  {
+    name: 'DANIEL ARTINE',
+    jobTitle: 'Engenheiro de Software na Stone Age',
+    image: 'https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg',
+    team: teams[3].name
+  },
+  {
+    name: 'GUILHERME LIMA',
+    jobTitle: 'Desenvolvedor Python e JavaScript na Alura',
+    image: 'https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg',
+    team: teams[3].name
+  },
+  {
+    name: 'PAULO SILVEIRA',
+    jobTitle: 'Hipster e CEO da Alura',
+    image: 'https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg',
+    team: teams[3].name
+  },
+  {
+    name: 'JULIANA AMOASEI',
+    jobTitle: 'Desenvolvedora de software e instrutora',
+    image: 'https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg',
+    team: teams[4].name
+  },
+  {
+    name: 'DANIEL ARTINE',
+    jobTitle: 'Engenheiro de Software na Stone Age',
+    image: 'https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg',
+    team: teams[4].name
+  },
+  {
+    name: 'GUILHERME LIMA',
+    jobTitle: 'Desenvolvedor Python e JavaScript na Alura',
+    image: '	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg',
+    team: teams[4].name
+  },
+  {
+    name: 'PAULO SILVEIRA',
+    jobTitle: 'Hipster e CEO da Alura',
+    image: 'https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg',
+    team: teams[4].name
+  },
+  {
+    name: 'JULIANA AMOASEI',
+    jobTitle: 'Desenvolvedora de software e instrutora',
+    image: 'https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg',
+    team: teams[5].name
+  },
+  {
+    name: 'DANIEL ARTINE',
+    jobTitle: 'Engenheiro de Software na Stone Age',
+    image: 'https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg',
+    team: teams[5].name
+  },
+  {
+    name: 'GUILHERME LIMA',
+    jobTitle: 'Desenvolvedor Python e JavaScript na Alura',
+    image: 'https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg',
+    team: teams[5].name
+  },
+  {
+    name: 'PAULO SILVEIRA',
+    jobTitle: 'Hipster e CEO da Alura',
+    image: 'https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg',
+    team: teams[5].name
+  },
+]
+
 export function App() {
-  const [collaborators, setCollaborator] = useState([]);
+  const [collaborators, setCollaborator] = useState(initial);
 
   const newCollaboratorAdded = (collaborator) => {
     setCollaborator([...collaborators, collaborator]);
@@ -72,17 +219,17 @@ export function App() {
   return (
     <div className="App">
       <Banner />
-      <Form teams={ teams.map(team => team.name) } registerCollaborator={ collaborator => newCollaboratorAdded(collaborator) }/>
-
-      { teams.map(team => <Team 
-            key={ team.name } 
-            name={ team.name }
-            primaryColor={ team.primaryColor }
-            secondColor={ team.secondColor }
-            collaborators={ collaborators.filter(collaborator => collaborator.team === team.name) }
+      <Form teams={ teams.map(team => team.name) } whenRegistering={ collaborator => newCollaboratorAdded(collaborator) }/>
+      <section className="teams">
+        <h1>Minha organização</h1>
+        {teams.map((team, index) => 
+          <Team 
+            key={index} 
+            team={team} 
+            collaborators={collaborators.filter(collaborator => collaborator.team === team.name)} 
           />
-      )}
-      
+        )}
+      </section>
       <Footer 
         backgroundImage='./assets/fundo.png'
         socialIcons={ icons }

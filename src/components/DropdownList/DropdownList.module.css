@@ -1,12 +1,17 @@
-.dropdown_list label{
+.dropdown_list {
+    margin: 24px 0;
+}
+
+.dropdown_list label {
     display: block;
     margin-bottom: 8px;
     font-size: 24px;
 }
 
-.dropdown_list select{
+.dropdown_list select {
     background-color: #FFF;
     box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.06);
+    border-radius: 0px;
     width: 100%;
     border: none;
     font-size: 24px;

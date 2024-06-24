@@ -5,67 +5,62 @@ import { DropdownList } from '../DropdownList';
 import { Button } from '../Button';
 
 import styles from './Form.module.css';
-    
-export const Form = (props) => {
+
+export const Form = ({ whenRegistering, teams }) => {
     const [name, setName] = useState('');
     const [jobTitle, setJobTitle] = useState('');
     const [image, setImage] = useState('');
     const [team, setTeam] = useState('');
 
-    const whenSaving = (event) => {
+    const whenSubmitting = (event) => {
         event.preventDefault();
-        props.registerCollaborator({
+        whenRegistering({
             name,
             jobTitle,
             image,
             team
-        });     
-        
-        setName('');
-        setJobTitle('');
-        setImage('');
-        setTeam('');
+        });
     }
 
     return (
-        <section className={ styles.form }>
-            <form onSubmit={ whenSaving }>
+        <section className={styles.form}>
+            <form onSubmit={whenSubmitting}>
                 <h2>Preencha os dados para criar o card do colaborador</h2>
-                <TextField 
-                    require={ true } 
-                    label="Nome" 
-                    placeholder="Digite seu nome" 
-                    valueInput={ name }
-                    toChange={ value => setName(value) }
-                />
-                
-                <TextField 
-                    require={ true } 
-                    label="Cargo" 
-                    placeholder="Digite seu cargo" 
-                    valueInput={ jobTitle }
-                    toChange={ value => setJobTitle(value) }
-                
-                />
-                <TextField require={ true } 
-                    label="Imagem" 
-                    placeholder="Informe o endereço da imagem" 
-                    valueInput={ image }
-                    toChange={ value => setImage(value) }
+
+                <TextField
+                    required={true}
+                    label="Nome"
+                    placeholder="Digite seu nome"
+                    value={name}
+                    toChange={value => setName(value)}
                 />
 
-                <DropdownList 
-                    require={ true }
+                <TextField
+                    required={true}
+                    label="Cargo"
+                    placeholder="Digite seu cargo"
+                    value={jobTitle}
+                    toChange={value => setJobTitle(value)}
+                />
+
+                <TextField
+                    required={true}
+                    label="Imagem"
+                    placeholder="Informe o endereço da imagem"
+                    value={image}
+                    toChange={value => setImage(value)}
+                />
+
+                <DropdownList
+                    required={true}
                     label="Times"
-                    items={ props.teams }
-                    valueInput={ team }
-                    toChange={ value => setTeam(value) }
+                    items={teams}
+                    value={team}
+                    toChange={value => setTeam(value)}
                 />
 
-                <Button>
-                    Criar Card
-                </Button>
+                <Button text='Criar Card' />
             </form>
         </section>
-    )
+    );
 }

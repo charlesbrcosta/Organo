@@ -1,28 +1,12 @@
 import styles from './DropdownList.module.css';
 
-export const DropdownList = (props) => {
+export const DropdownList = ({ label, items, value, toChange, required = false }) => {
 
-    const whenTyping = (event) => {
-        props.toChange(event.target.value);
-    }
-
-    return(
-        <div className={ styles.dropdown_list }>
-
-            <label>
-                { props.label }
-            </label>
-
-            <select 
-                required={ props.require } 
-                value={ props.valueInput }
-                onChange={ whenTyping }
-            >
-                <option value=''></option>
-                { props.items.map(item => {
-                    return <option key={ item }> { item }</option>
-                })}
-            </select>
-        </div>
-    );
+    return (<div className={styles.dropdown_list}>
+        <label>{label}</label>
+        <select required={required} value={value} onChange={event => toChange(event.target.value)}>
+            <option />
+            {items.map(item => <option key={item}>{item}</option>)}
+        </select>
+    </div>)
 }
