@@ -6,11 +6,13 @@ import { Button } from '../Button';
 
 import styles from './Form.module.css';
 
-export const Form = ({ whenRegistering, teams }) => {
+export const Form = ({ whenRegistering, teams, registerTeam }) => {
     const [name, setName] = useState('');
     const [jobTitle, setJobTitle] = useState('');
     const [image, setImage] = useState('');
     const [team, setTeam] = useState('');
+    const [teamName, setTeamName] = useState('');
+    const [teamColor, setTeamColor] = useState('');
 
     const whenSubmitting = (event) => {
         event.preventDefault();
@@ -26,7 +28,6 @@ export const Form = ({ whenRegistering, teams }) => {
         <section className={styles.form}>
             <form onSubmit={whenSubmitting}>
                 <h2>Preencha os dados para criar o card do colaborador</h2>
-
                 <TextField
                     required={true}
                     label="Nome"
@@ -34,7 +35,6 @@ export const Form = ({ whenRegistering, teams }) => {
                     value={name}
                     toChange={value => setName(value)}
                 />
-
                 <TextField
                     required={true}
                     label="Cargo"
@@ -42,7 +42,6 @@ export const Form = ({ whenRegistering, teams }) => {
                     value={jobTitle}
                     toChange={value => setJobTitle(value)}
                 />
-
                 <TextField
                     required={true}
                     label="Imagem"
@@ -50,7 +49,6 @@ export const Form = ({ whenRegistering, teams }) => {
                     value={image}
                     toChange={value => setImage(value)}
                 />
-
                 <DropdownList
                     required={true}
                     label="Times"
@@ -58,8 +56,28 @@ export const Form = ({ whenRegistering, teams }) => {
                     value={team}
                     toChange={value => setTeam(value)}
                 />
-
                 <Button text='Criar Card' />
+            </form>
+            <form onSubmit={(event) => {
+                event.preventDefault();
+                registerTeam({name: teamName, color: teamColor});
+            }}>
+                <h2>Preencha os dados para criar um novo time</h2>
+                <TextField
+                    required
+                    label="Nome"
+                    placeholder="Digite o nome do time"
+                    value={teamName}
+                    toChange={value => setTeamName(value)}
+                />
+                <TextField
+                    required
+                    label="Cor"
+                    placeholder="Digite a cor do time"
+                    value={teamColor}
+                    toChange={value => setTeamColor(value)}
+                />
+                <Button text='Criar um novo time' />
             </form>
         </section>
     );

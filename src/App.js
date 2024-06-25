@@ -66,8 +66,7 @@ export function App() {
     {
       id: uuidv4(),
       name: 'Inovação e Gestão',
-      color: '#FF8A29',
-      
+      color: '#FF8A29',      
     },
   ]);
   
@@ -261,11 +260,19 @@ export function App() {
       return team
     }));
   }
+
+  function registerTeam(newTeam) {
+    setTeams([...teams, {...newTeam, id: uuidv4()}]);
+  }
   
   return (
     <div className="App">
       <Banner />
-      <Form teams={teams.map(team => team.name)} whenRegistering={collaborator => newCollaboratorAdded(collaborator)} />
+      <Form 
+        teams={teams.map(team => team.name)} 
+        whenRegistering={collaborator => newCollaboratorAdded(collaborator)} 
+        registerTeam={registerTeam}
+      />
       <section className="teams">
         <h1>Minha organização</h1>
         {teams.map((team, index) =>
