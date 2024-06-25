@@ -5,7 +5,11 @@ import styles from './Collaborator.module.css';
 export const Collaborator = ({ collaborator, backgroundColor, whenDeleting }) => {
     return (
         <div className={styles.collaborator}>
-            <AiFillCloseCircle size={25} className={styles.delete} onClick={whenDeleting} />
+            <AiFillCloseCircle 
+                size={25} 
+                className={styles.delete} 
+                onClick={() => whenDeleting(collaborator.id)}
+            />
             <div className={styles.header} style={{ backgroundColor: backgroundColor }}>
                 <img src={collaborator.image} alt={collaborator.name} />
             </div>

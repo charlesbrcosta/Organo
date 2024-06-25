@@ -243,14 +243,14 @@ export function App() {
     },
   ]
 
-  const [collaborators, setCollaborator] = useState(initial);  
+  const [collaborators, setCollaborators] = useState(initial);  
 
   const newCollaboratorAdded = (collaborator) => {
-    setCollaborator([...collaborators, collaborator]);
+    setCollaborators([...collaborators, collaborator]);
   }
 
-  const deleteCollaborator = () => {
-    console.log('deletar colaborador');
+  function deleteCollaborator(id) {
+    setCollaborators(collaborators.filter(collaborator => collaborator.id !== id));
   }
 
   function changeColorTeam(color, id) {
