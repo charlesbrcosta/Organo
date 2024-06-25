@@ -6,9 +6,9 @@ import styles from './Team.module.css';
 export const Team = ({ team, collaborators, deleting, changeColor }) => {
 
     return (
-        collaborators.length > 0 && <section className={styles.team} style={{ backgroundImage: 'url(./assets/fundo.png)', backgroundColor: hexToRgba(team.color, '0.6') }}>
+        collaborators.length > 0 && <section className={styles.team} style={{ backgroundImage: 'url(./assets/fundo.png)', backgroundColor: hexToRgba(team.color, '0.4') }}>
             <input className={styles.input_color}
-                onChange={event => changeColor(event.target.value, team.name)} 
+                onChange={event => changeColor(event.target.value, team.id)} 
                 value={team.color} 
                 type='color' 
             />
