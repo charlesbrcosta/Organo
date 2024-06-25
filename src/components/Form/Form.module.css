@@ -8,6 +8,7 @@
 
 .form form {
     flex: 1;
+    max-width: 600px;
     background-color: #dedef0b7;
     border-radius: 20px;
     padding: 36px 64px;

@@ -1,8 +1,17 @@
-import { AiFillCloseCircle } from 'react-icons/ai'
+import { AiFillCloseCircle, AiFillHeart, AiOutlineHeart } from 'react-icons/ai'
 
 import styles from './Collaborator.module.css';
 
-export const Collaborator = ({ collaborator, backgroundColor, whenDeleting }) => {
+export const Collaborator = ({ collaborator, backgroundColor, whenDeleting, whenFavorite }) => {
+    function favorite() {
+        whenFavorite(collaborator.id);
+    }
+
+    const propsFavorite = {
+        size: 25,
+        onClick: favorite
+    }
+
     return (
         <div className={styles.collaborator}>
             <AiFillCloseCircle 
@@ -16,6 +25,12 @@ export const Collaborator = ({ collaborator, backgroundColor, whenDeleting }) =>
             <div className={styles.footer}>
                 <h4>{collaborator.name}</h4>
                 <h5>{collaborator.jobTitle}</h5>
+                <div className={styles.favorite}>
+                    {collaborator.favorite 
+                        ? <AiFillHeart {...propsFavorite} color='#ff0000'/> 
+                        : <AiOutlineHeart {...propsFavorite} />
+                    }
+                </div>
             </div>
         </div>
     );

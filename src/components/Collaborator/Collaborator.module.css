@@ -44,3 +44,9 @@
     top: -10px;
     cursor: pointer;
 }
+
+.favorite {
+    display: inline-block;
+    cursor: pointer;
+    padding: 2px;
+}

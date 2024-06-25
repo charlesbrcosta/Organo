@@ -1,6 +1,6 @@
 # Sistema Organo
 
-O Sistema Organo foi desenvolvido como parte da primeira aula prática de React. O objetivo principal deste projeto é introduzir e praticar conceitos fundamentais de React, incluindo:
+O Sistema Organo foi desenvolvido como parte aula prática de React. O objetivo principal deste projeto é introduzir e praticar conceitos fundamentais de React, incluindo:
 
 - Componentes estáticos e dinâmicos
 - Props
@@ -8,7 +8,7 @@ O Sistema Organo foi desenvolvido como parte da primeira aula prática de React.
 - Refatoração
 - Métodos de array como map e filter
 - Criação de objetos para representar times e cores de times
-- Criação de objeto para adicionar icons de redes sociais
+- Criação de objetos para adicionar icons
 
 O projeto foi iniciado utilizando o create-react-app.
 
@@ -22,7 +22,14 @@ O projeto foi iniciado utilizando o create-react-app.
 
 ## :hammer: Funcionalidades
 
-O Sistema Organo permite o cadastro de pessoas, incluindo nome, cargo e time. Os times são selecionados a partir de uma lista de opções (select), que inclui áreas de atuação na programação, como Front-end, UX, Gestão, entre outras.
+O Sistema Organo oferece diversas funcionalidades, incluindo:
+
+- Cadastro de Pessoas: Permite o registro de nome, cargo e time de cada pessoa.
+- Cadastro de Novos Times: Usuários podem criar novos times diretamente pela interface.
+- Alteração de Cores dos Times: Função para personalizar a cor de cada time.
+- Seleção de Times: Times são escolhidos a partir de uma lista de opções (select) que abrange várias áreas de atuação na programação, como Front-end, UX, Gestão, entre outras.
+- Deletar Cards: Permite a exclusão de cards cadastrados.
+- Favoritar Cards: Função para marcar cards como favoritos, facilitando o acesso rápido aos mais importantes.
 
 Ao cadastrar um novo cartão (card) e escolher um time, o sistema utiliza o método filter para organizar e exibir os membros conforme suas áreas de atuação.
 
@@ -44,6 +51,11 @@ Ao cadastrar um novo cartão (card) e escolher um time, o sistema utiliza o mét
 O projeto está disponível na Vercel. Você pode acessá-lo através do seguinte link: 
 
 [Sistema Organo na Vercel.](https://organo.vercel.app/)
+
+### Acesso às Versões
+
+- [Projeto Inicial v1.0](https://github.com/charlesbrcosta/Organo/releases/tag/v1.0)
+- [Versão Atualizada v2.0](https://github.com/charlesbrcosta/Organo/releases/tag/v2.0) - **Última versão**
 
 ## :warning: Como Executar o Projeto Localmente
 

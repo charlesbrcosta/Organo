@@ -22,6 +22,11 @@ export const Form = ({ whenRegistering, teams, registerTeam }) => {
             image,
             team
         });
+
+        setName('');
+        setJobTitle('');
+        setImage('');
+        setTeam('');
     }
 
     return (
