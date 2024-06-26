@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
 import {v4 as uuidv4 } from 'uuid';
 
-import { Banner } from './components/Banner/';
+import { Banner } from './components/Banner';
 import { Form } from './components/Form';
 import { Team } from './components/Team';
 import { Footer } from './components/Footer';

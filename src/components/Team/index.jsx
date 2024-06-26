@@ -4,7 +4,7 @@ import hexToRgba from 'hex-to-rgba';
 import styles from './Team.module.css';
 
 export const Team = ({ team, collaborators, deleting, changeColor, whenFavorite }) => {
-
+    
     return (
         collaborators.length > 0 && <section className={styles.team} style={{ backgroundImage: 'url(./assets/fundo.png)', backgroundColor: hexToRgba(team.color, '0.4') }}>
             <input className={styles.input_color}
