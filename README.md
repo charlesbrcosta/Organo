@@ -8,7 +8,6 @@ O Sistema Organo foi desenvolvido como parte aula prática de React. O objetivo 
 - Refatoração
 - Métodos de array como map e filter
 - Criação de objetos para representar times e cores de times
-- Criação de objetos para adicionar icons
 
 O projeto foi iniciado utilizando o create-react-app.
 
@@ -33,14 +32,14 @@ O Sistema Organo oferece diversas funcionalidades, incluindo:
 
 Ao cadastrar um novo cartão (card) e escolher um time, o sistema utiliza o método filter para organizar e exibir os membros conforme suas áreas de atuação.
 
-### Interface da página inicial: 
-<img src="./public/assets/interfacePrint/Interface.png"  alt="Pagina inicial." width="900">
+### Interface da página de cadastro: 
+<img src="./public/assets/interfacePrint/interfaceDeCadastro.png"  alt="Pagina inicial." width="900">
 
 <br />
 
-### Interface do cadastro de pessoas:
+### Interface dos cards cadastrados:
 
-<img src="./public/assets/interfacePrint/cadastroDeCards.png"  alt="Pagina inicial." width="900">
+<img src="./public/assets/interfacePrint/Cards.png"  alt="Pagina inicial." width="900">
 
 <br />
 
