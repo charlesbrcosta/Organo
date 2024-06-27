@@ -9,7 +9,7 @@ O Sistema Organo foi desenvolvido como parte aula prática de React. O objetivo 
 - Métodos de array como map e filter
 - Criação de objetos para representar times e cores de times
 
-O projeto foi iniciado utilizando o create-react-app.
+O projeto foi inicialmente criado utilizando o Create React App e posteriormente migrado para o Vite.
 
 ## :dizzy: Tecnologias utilizadas
 
@@ -54,7 +54,8 @@ O projeto está disponível na Vercel. Você pode acessá-lo através do seguint
 ### Acesso às Versões
 
 - [Projeto Inicial v1.0](https://github.com/charlesbrcosta/Organo/releases/tag/v1.0)
-- [Versão Atualizada v2.0](https://github.com/charlesbrcosta/Organo/releases/tag/v2.0) - **Última versão**
+- [Versão Atualizada v2.0](https://github.com/charlesbrcosta/Organo/releases/tag/v2.0)
+- [Migração para Vite v3.0](https://github.com/charlesbrcosta/Organo/releases/tag/v3.0) - **Última versão**
 
 ## :warning: Como Executar o Projeto Localmente
 
