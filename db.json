@@ -1,20 +1,12 @@
 {
   "card": [
     {
-      "name": "Charles Bruno",
-      "jobTitle": "Develop",
-      "image": "https://www.github.com/charlesbrcosta.png",
-      "team": "Front-End",
-      "id": "772ff6fe-4bea-478e-bbc6-93655e0ae8c0",
-      "favorite": false
-    },
-    {
       "name": "JULIANA AMOASEI",
       "jobTitle": "Desenvolvedora de Software e Instrutora",
       "image": "https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg",
       "team": "Programação",
       "id": "8ef6c8e3-92ea-4388-aaac-e6fe5993173b",
-      "favorite": false
+      "favorite": true
     },
     {
       "name": "DANIEL ARTINE",
@@ -33,12 +25,12 @@
       "favorite": false
     },
     {
-      "name": "PAULO SILVEIRA",
-      "jobTitle": "Hipster e CEO da Alura",
-      "image": "https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg",
-      "team": "Programação",
-      "id": "7242a579-e8ef-40fa-878f-0c678d151e03",
-      "favorite": false
+      "name": "Charles Bruno",
+      "jobTitle": "Desenvolver Front-End",
+      "image": "https://www.github.com/charlesbrcosta.png",
+      "team": "Front-End",
+      "id": "ad8c91ae-5f50-4fc0-91c3-0be7700ac915",
+      "favorite": true
     }
   ]
 }
