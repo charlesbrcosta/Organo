@@ -293,8 +293,15 @@ export function App() {
 
   }
 
-  function deleteCollaborator(id) {
-    setCollaborators(collaborators.filter(collaborator => collaborator.id !== id));
+  async function deleteCollaborator(id) {
+
+    const response = await fetch(`http://localhost:3000/card/${id}`, {
+      method: 'DELETE',
+    });
+
+    if(response.ok) {
+      setCollaborators(collaborators.filter(collaborator => collaborator.id !== id));
+    }
   }
 
   function changeColorTeam(color, id) {
@@ -310,14 +317,32 @@ export function App() {
     setTeams([...teams, {...newTeam, id: uuidv4()}]);
   }
 
-  function solveFavorite(id) {
-    setCollaborators(collaborators.map(collaborator => {
-      if(collaborator.id === id) {
-        collaborator.favorite = !collaborator.favorite;
+  async function solveFavorite(id) {
+    const collaboratorToUpdate = collaborators.find(collaborator => collaborator.id === id);
+
+    if(collaboratorToUpdate) {
+      const updateCollaborator = { ...collaboratorToUpdate, favorite: !collaboratorToUpdate.favorite};
+     
+      const response = await fetch(`http://localhost:3000/card/${id}`, {
+        method: 'PATCH',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ favorite: updateCollaborator.favorite })
+      });
+    
+      if(response.ok) {
+        setCollaborators(collaborators.map(collaborator => {
+          if(collaborator.id === id) {
+            return updateCollaborator;
+          }
+          return collaborator;
+        }));
       }
-      return collaborator;
-    }))
-  }
+    }
+  }  
+
+
   
   return (
     <div className="App">
