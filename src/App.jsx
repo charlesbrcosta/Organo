@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
 import {v4 as uuidv4 } from 'uuid';
 
@@ -70,7 +70,7 @@ export function App() {
     },
   ]);
   
-  const initial = 
+ /*  const initial = 
   [
     {
       id: uuidv4(),
@@ -264,12 +264,33 @@ export function App() {
       image: 'https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg',
       team: teams[5].name
     },
-  ]
+  ] */
 
-  const [collaborators, setCollaborators] = useState(initial);  
+  const [collaborators, setCollaborators] = useState([]);  
 
-  const newCollaboratorAdded = (collaborator) => {
-    setCollaborators([...collaborators, collaborator]);
+  useEffect(() => {
+    async function showCollaborators() {
+      const response = await fetch('http://localhost:3000/card');
+      const data = await response.json();
+      setCollaborators(data);
+    }
+    showCollaborators();
+  }, []);
+ 
+  const newCollaboratorAdded = async (collaborator) => {
+    const newCollaborator = {...collaborator, id: uuidv4(), favorite: false};
+
+    const response = await fetch('http://localhost:3000/card', {
+      method : "POST",
+      headers : {
+        'Content-Type' : 'application/json'
+      },
+      body: JSON.stringify(newCollaborator)
+    });
+    if(response.ok) {
+      setCollaborators([...collaborators, newCollaborator]);
+    }
+
   }
 
   function deleteCollaborator(id) {

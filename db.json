@@ -1,0 +1,44 @@
+{
+  "card": [
+    {
+      "name": "Charles Bruno",
+      "jobTitle": "Develop",
+      "image": "https://www.github.com/charlesbrcosta.png",
+      "team": "Front-End",
+      "id": "772ff6fe-4bea-478e-bbc6-93655e0ae8c0",
+      "favorite": false
+    },
+    {
+      "name": "JULIANA AMOASEI",
+      "jobTitle": "Desenvolvedora de Software e Instrutora",
+      "image": "https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg",
+      "team": "Programação",
+      "id": "8ef6c8e3-92ea-4388-aaac-e6fe5993173b",
+      "favorite": false
+    },
+    {
+      "name": "DANIEL ARTINE",
+      "jobTitle": "Engenheiro de Software na Stone Age",
+      "image": "https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg",
+      "team": "Programação",
+      "id": "8a1d6fdb-6992-4c18-a089-bfadd944f7cd",
+      "favorite": false
+    },
+    {
+      "name": "GUILHERME LIMA",
+      "jobTitle": "Desenvolvedor Python e Javascript na Alura",
+      "image": "https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg",
+      "team": "Programação",
+      "id": "946a31bb-e694-4071-86e2-7025942804da",
+      "favorite": false
+    },
+    {
+      "name": "PAULO SILVEIRA",
+      "jobTitle": "Hipster e CEO da Alura",
+      "image": "https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg",
+      "team": "Programação",
+      "id": "7242a579-e8ef-40fa-878f-0c678d151e03",
+      "favorite": false
+    }
+  ]
+}
